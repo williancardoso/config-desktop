@@ -5,8 +5,11 @@ class desktop::packages (
 ){
 
   if $install {
+
     package { $install:
-      ensure => installed,
+      ensure  => installed,
+      require => File['/etc/yum.repos.d'],
     }
+  
   }
 }

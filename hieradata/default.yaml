@@ -1,8 +1,10 @@
 
 classes::include:
-  - "profiles::desktop"
+  - "profile::desktop"
 
 desktop::packages::install:
   - "vim-enhanced"
   - "git"
   - "curl"
+  - "google-chrome-stable"
+  - "VirtualBox-5.0"

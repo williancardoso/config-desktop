@@ -1,22 +1,19 @@
 
 class desktop::vim (
 
-  $dirs = ['/root/.vim','/root/.vim/autoload','/root/.vim/bundle'],
-
 ){
 
   file {
-    $dirs:
-      ensure  => directory,
-      require => Package['vim-enhanced'];
-    '/root/.vim/autoload/pathogen.vim':
-      ensure  => present,
-      source  => 'puppet:///modules/desktop/vim/pathogen.vim';
     '/root/.vimrc':
       ensure  => present,
       source  => 'puppet:///modules/desktop/vim/vimrc';
+    '/root/.vim':
+      ensure  => directory,
+      source  => 'puppet:///modules/desktop/vim/plugins',
+      recurse => true,
   }
 
+  /*
   exec {
     'git clone git://github.com/tpope/vim-sensible.git':
       path    => '/usr/local/bin/:/bin/',
@@ -25,6 +22,7 @@ class desktop::vim (
       path    => '/usr/local/bin/:/bin/',
       command => 'git clone git://github.com/rodjek/vim-puppet.git ~/.vim/bundle/puppet';
   }
+  */
 
 }
 
