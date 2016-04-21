@@ -1,0 +1,8 @@
+
+classes::include:
+  - "profiles::desktop"
+
+desktop::packages::install:
+  - "vim-enhanced"
+  - "git"
+  - "curl"
