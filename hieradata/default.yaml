@@ -11,3 +11,4 @@ desktop::packages::install:
   - "gcc"
   - "vagrant"
   - "docker"
+  - "owncloud-client"
