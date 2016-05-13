@@ -13,3 +13,4 @@ desktop::packages::install:
   - "docker"
   - "owncloud-client"
   - "skype"
+  - "gimp"
