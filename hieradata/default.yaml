@@ -12,3 +12,4 @@ desktop::packages::install:
   - "vagrant"
   - "docker"
   - "owncloud-client"
+  - "skype"
