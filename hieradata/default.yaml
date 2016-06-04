@@ -14,3 +14,4 @@ desktop::packages::install:
   - "owncloud-client"
   - "skype"
   - "gimp"
+  - "thunderbird"
