@@ -1,10 +1,12 @@
 # desktop
 
-## executando o modulo
-
-```puppet
-puppet apply --hiera_config=hiera.yaml --modulepath=modules start.pp
+## install Puppet
+```bash
+yum install http://yum.puppetlabs.com/fedora/f23/PC1/x86_64/puppet-agent-1.5.1-1.fedoraf23.x86_64.rpm
 ```
 
-yum install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-23.noarch.rpm
-wget http://downloadcontent.opensuse.org/repositories/home:/Kenzy:/packages/Fedora_23/noarch/kazam-1.4.5-3.1.noarch.rpm
+## executando o modulo
+```puppet
+/opt/puppetlabs/bin/puppet apply --hiera_config=hiera.yaml --modulepath=modules start.pp
+```
+

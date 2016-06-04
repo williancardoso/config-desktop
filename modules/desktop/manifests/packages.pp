@@ -7,8 +7,9 @@ class desktop::packages (
   if $install {
 
     package { $install:
-      ensure  => installed,
-      require => File['/etc/yum.repos.d'],
+      ensure          => installed,
+      require         => File['/etc/yum.repos.d'],
+      install_options => ['--nogpgcheck'],
     }
   
   }
