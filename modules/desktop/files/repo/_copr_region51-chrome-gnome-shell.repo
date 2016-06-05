@@ -1,0 +1,8 @@
+[region51-chrome-gnome-shell]
+name=Copr repo for chrome-gnome-shell owned by region51
+baseurl=https://copr-be.cloud.fedoraproject.org/results/region51/chrome-gnome-shell/fedora-$releasever-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/region51/chrome-gnome-shell/pubkey.gpg
+enabled=1
+enabled_metadata=1

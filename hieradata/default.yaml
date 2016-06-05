@@ -15,3 +15,5 @@ desktop::packages::install:
   - "skype"
   - "gimp"
   - "thunderbird"
+  - "chrome-gnome-shell"
+  - "gnome-tweak-tool.noarch"
