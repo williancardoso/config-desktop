@@ -8,6 +8,8 @@ desktop::packages::install:
   - "curl"
   - "google-chrome-stable"
   - "VirtualBox-5.0"
+  - "dkms"
+  - "kernel-devel"
   - "gcc"
   - "vagrant"
   - "docker"
