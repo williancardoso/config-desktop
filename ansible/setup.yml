@@ -1,0 +1,16 @@
+---
+
+- hosts: localhost
+  connection: local
+  vars_files:
+    - vars/common.yml
+
+  tasks:
+
+    - include_tasks: tasks/user.yml
+    - include_tasks: tasks/packages.yml
+    - include_tasks: tasks/git.yml
+
+    - include_role: name=chrome
+    - include_role: name=atom
+    - include_role: name=docker

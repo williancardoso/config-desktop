@@ -1,0 +1,11 @@
+---
+
+- name: Create user
+  user: name="{{ meu_user }}" shell=/bin/bash password={{ meu_password }}
+
+
+- name: Install sudo
+  apt: name=sudo state=present
+
+- name: Configure sudoers
+  template: src=files/sudo dest="/etc/sudoers.d/{{ meu_user }}" mode=0440

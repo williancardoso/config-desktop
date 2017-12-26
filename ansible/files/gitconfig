@@ -1,0 +1,3 @@
+[user]
+	email = {{ meu_email }}
+	name = {{ meu_nome }}
