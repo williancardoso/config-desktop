@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ansible-galaxy install -p roles -r requirements.yml
-ansible-playbook -i localhost, -b setup.yml
+ansible-galaxy install -r roles/requirements.yml -p roles --force
+ansible-playbook -i localhost setup.yml -b
